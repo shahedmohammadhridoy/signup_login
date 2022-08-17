@@ -21,8 +21,8 @@
                 <div class="mb-3">
                     <input type="file" class="form-control">
                 </div>
-<input type="submit" class="btn btn-primary">
-</form>
-</div>
-</body>
-</html>
+                <input type="submit" class="btn btn-primary">
+            </form>
+        </div>
+    </body>
+    </html>
