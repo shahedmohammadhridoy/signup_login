@@ -10,18 +10,23 @@
             <form class="shadow w-450 p-3" action="php/signup.php" method="post" enctype="multipart/form-data">
                 <h4 class="display-4  fs-1">Create Account</h4><br>
                 <div class="mb-3">
+                    <label class="form-label">Full Name</label>
                     <input type="text" class="form-control" name="fname">
                 </div>
                 <div class="mb-3">
+                    <label class="form-label">User name</label>
                     <input type="text" class="form-control" name="uname">
                 </div>
                 <div class="mb-3">
+                    <label class="form-label">Password</label>
                     <input type="password" class="form-control" name="pass">
                 </div>
                 <div class="mb-3">
+                    <label class="form-label">Profile Picture</label>
                     <input type="file" class="form-control" name="pp">
                 </div>
-                <input type="submit" class="btn btn-primary">
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+                <a href="#" class="link-secondary">Login</a>
             </form>
         </div>
     </body>
