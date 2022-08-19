@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="d-flex justify-content-center align-items-center vh-100">
-            <form class="shadow w-450 p-3" action="php/signup.php" method="post" enctype="multipart/form-data">
+            <form class="shadow w-450 p-3" action="php/signup.php" method="POST" enctype="multipart/form-data">
                 <h4 class="display-4  fs-1">Create Account</h4><br>
                 <div class="mb-3">
                     <label class="form-label">Full Name</label>

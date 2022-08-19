@@ -10,8 +10,8 @@
 </head>
 <body>
     <div class="d-flex justify-content-center align-items-center vh-100">
-        <form action="php/login.php" class="shadow w-450 p-3">
-            <h4 class="display-4 fs-1">Login</h4>
+        <form class="shadow w-450 p-3" action="php/login.php" method="POST">
+            <h4 class="display-4 fs-1">LOGIN</h4><br>
             <div class="mb-3">
                 <label class="form-label">User name</label>
                 <input type="text" class="form-control">
