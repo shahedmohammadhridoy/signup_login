@@ -8,7 +8,7 @@ if( isset($_POST['fname']) && isset($_POST['uname']) && isset($_POST['pass'])){
     $uname = $_POST['uname'];
     $pass = $_POST['pass'];
 
-    $data = "fname=".$fname."&username=".$uname;
+    $data = "fname=".$fname."&uname=".$uname;
     
     if(empty($fname)){
         $em = "Full name is required";
