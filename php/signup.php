@@ -23,8 +23,17 @@ if( isset($_POST['fname']) && isset($_POST['uname']) && isset($_POST['pass'])){
         header("Location: ../index.php?error=$em&$data");
         exit;
     } else {
+        //Hashing the password
+        $pass = password_hash($pass, PASSWORD_DEFAULT);
+        
+        if(isset($_FILES['pp']['name']) AND !empty($_FILES['pp']['name'])){
 
-        //TODO:
+            $img_name = $_FILES['pp']['name'];
+            $tmp_name = $_FILES['pp']['tmp_name'];
+
+            
+
+        }
 
     }
 }
