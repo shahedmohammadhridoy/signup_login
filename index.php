@@ -18,9 +18,14 @@
                     <div class="alert alert-danger">
                     <?php echo $_GET['error']; ?>
                     </div>
-                    <?php 
-                }
-                ?>
+                    <?php } ?>
+                
+                <!--==================== Success Message ====================-->
+                <?php if(isset($_GET['success'])){ ?>
+                    <div class="alert alert-success" role="alert">
+                        <?php echo $_GET['success']; ?>
+                    </div>
+                <?php } ?>
 
                 <div class="mb-3">
                     <label class="form-label">Full Name</label>
