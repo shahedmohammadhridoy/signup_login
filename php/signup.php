@@ -64,7 +64,15 @@ if( isset($_POST['fname']) && isset($_POST['uname']) && isset($_POST['pass'])){
                 exit;
             }
         } else {
-            
+            $sql = "INSERT INTO users(fname, username, password) VALUES(?,?,?)";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute([$fname,$uname,$pass]);
+
+            header("Location: ../index.php?success=Your account created successfully");
+            exit;
         }
     }
+} else {
+    header("Location: ../index.php?error=error");
+    exit;
 }
