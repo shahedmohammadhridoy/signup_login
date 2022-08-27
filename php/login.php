@@ -35,7 +35,12 @@ if(isset($_POST['uname']) && isset($_POST['pass'])){
             if($username == $uname){
                 if(password_verify($pass,$password)){
                     
-                    
+                    $_SESSION['id'] = $id;
+                    $_SESSION['fname'] = $fname;
+                    $_SESSION['pp'] = $pp;
+
+                    header("Location: ../home.php");
+                    exit;
 
                 }else{
                     $em = "Incorrect User name or password";
