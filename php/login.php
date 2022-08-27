@@ -64,5 +64,6 @@ if(isset($_POST['uname']) && isset($_POST['pass'])){
     }
 
 } else {
+    header("Location: ../login.php?error=error");
     exit;
 }
